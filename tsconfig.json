@@ -1,3 +1,18 @@
 {
+  "baseUrl": ".",
+  "paths": {
+    "src/*": ["./src/*"],
+    "components/*": ["./src/components/*"],
+    "screens/*": ["./src/screens/*"],
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@screens/*": ["src/screens/*"],
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "index.ts", "App.tsx"],
+  "exclude": ["node_modules"],
   "extends": "@react-native/typescript-config/tsconfig.json"
 }
